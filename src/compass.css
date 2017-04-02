@@ -1,0 +1,66 @@
+html, body {
+    background:#20292e;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.compass {
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -130px;
+    margin-top: -130px;
+}
+
+.compass .disc {
+    height: inherit;
+    width: inherit;
+    background: url(images/disc.png) no-repeat center center;
+    background-size: 100% auto;
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.compass .arrow {
+    height: 124px;
+    width: 124px;
+    background: url(images/center.png) no-repeat center center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -62px;
+    margin-top: -62px;
+    background-size: 100% auto;
+    text-align: center;
+    padding: 35px 43px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.compass .direction {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.compass .angle {
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.angle::after {
+    content: "°";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    
+}
+
